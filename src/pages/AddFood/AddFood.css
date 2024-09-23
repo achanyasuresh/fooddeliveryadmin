@@ -1,0 +1,84 @@
+/* Center the container in the browser */
+.addfood-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center content horizontally */
+    justify-content: center; /* Center content vertically */
+    text-align: center; /* Center text within elements */
+  }
+  .addfood-container h2 {
+    margin-bottom: 20px; /* Optional: Adjust spacing below the heading */
+  }
+  
+  
+  /* Add card-like styling to the form */
+  .addfood-form {
+    width: 100%;
+    max-width: 500px; /* Limit max width for better responsiveness */
+    padding: 30px;
+    background-color: #ffffff; /* White background for the form */
+    border-radius: 12px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Space between form elements */
+  }
+  
+  .image-upload img {
+    width: 100px;
+    border-radius: 50%;
+    border: 2px dashed #ccc; /* Dashed border for upload image */
+    cursor: pointer; /* Cursor pointer to indicate interaction */
+    transition: border-color 0.3s ease;
+  }
+  
+  .image-upload img:hover {
+    border-color: #6d6d6d; /* Change border color on hover */
+  }
+  
+  .product-name, .product-description, .category, .add-price {
+    width: 100%;
+  }
+  
+  .product-name input, .product-description textarea, .category select, .add-price input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd; /* Light border */
+    border-radius: 8px; /* Rounded corners */
+    font-size: 16px;
+    margin-top: 5px;
+    transition: border-color 0.3s ease; /* Smooth border color transition */
+  }
+  
+  .product-name input:focus, .product-description textarea:focus, .category select:focus, .add-price input:focus {
+    border-color: #1d4ed8; /* Focus color */
+    outline: none; /* Remove default outline */
+  }
+  
+  .price {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+  }
+  .error-message {
+    color: red;
+    font-size: 14px;
+    margin-top: 5px;
+  }
+  .addbutton {
+    width: 100%;
+    padding: 12px;
+    background-color: #1d4ed8; /* Blue background */
+    color: #ffffff; /* White text */
+    border: none;
+    border-radius: 8px; /* Rounded corners */
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Smooth background color transition */
+  }
+  
+  .addbutton:hover {
+    background-color: #2563eb; /* Slightly darker blue on hover */
+  }
+  

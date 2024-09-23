@@ -1,0 +1,84 @@
+/* Basic styling for the navbar */
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 5%;
+    background: linear-gradient(135deg, #fcf7ff 0%, #f0f8ff 100%); /* Light gradient background */
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1); /* Soft shadow */
+    border-radius: 12px; /* More rounded corners */
+    position: relative; /* For positioning the profile icon */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Modern font */
+}
+
+/* Styling for the logo */
+.navbar .logo {
+    width: max(8%, 70px);
+    object-fit: contain;
+    transition: transform 0.3s ease; /* Add smooth transition */
+}
+
+/* Hover effect for the logo */
+.navbar .logo:hover {
+    transform: scale(1.1); /* Slight zoom effect */
+}
+
+/* Container for navigation links */
+.navbar .navbar-links {
+    display: flex;
+    align-items: center;
+    gap: 30px; /* Increase gap for a cleaner look */
+}
+
+/* Styling for each link */
+.navbar .navbar-link {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #4b5563; /* Neutral color for text */
+    font-weight: 600; /* Slightly bolder text */
+    transition: color 0.3s ease, transform 0.3s ease; /* Smooth transition effects */
+    padding: 8px 12px; /* Add some padding */
+    border-radius: 8px; /* Rounded edges for links */
+}
+
+/* Styling for text in links */
+.navbar .navbar-link span {
+    margin-left: 10px;
+    font-size: 16px; /* Slightly larger font size */
+}
+
+/* Hover effect for links */
+.navbar .navbar-link:hover {
+    color: #2563eb; /* Blue color on hover */
+    background-color: rgba(37, 99, 235, 0.1); /* Light blue background on hover */
+    transform: translateY(-3px); /* Lift effect */
+}
+
+/* Styling for the profile icon */
+.navbar .profile,
+.navbar .logout {
+    width: 36px;
+    color: #4b5563;
+    cursor: pointer;
+    transition: color 0.3s ease, transform 0.3s ease; /* Smooth transition effects */
+}
+
+/* Hover effect for icons */
+.navbar .profile:hover,
+.navbar .logout:hover {
+    color: #ef4444; /* Red color on hover for logout */
+    transform: scale(1.15); /* Zoom effect */
+}
+
+/* Optional: Add a subtle border for a clean finish */
+.navbar::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background: linear-gradient(90deg, #2563eb 0%, #3b82f6 100%);
+    border-radius: 4px;
+}
